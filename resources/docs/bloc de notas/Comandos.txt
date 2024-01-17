@@ -7,3 +7,7 @@ laravel new ejemplo
 composer require laravel/breeze --dev
 php artisan breeze:install
 blade
+****
+HACER LAS MIGRACIONES CORRESPONDIENTES
+-Modificar la migración en colocar nuevas tablas
+php artisan migrat:fresh
