@@ -1,0 +1,9 @@
+*****INSTALAR LARAVEL
+----Empezar a crear el proyecto, en el programa Git:
+composer global require laravel/installer
+laravel new ejemplo
+0
+----Instalando la autentificación
+composer require laravel/breeze --dev
+php artisan breeze:install
+blade
