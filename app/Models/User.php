@@ -17,8 +17,11 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    //TODO: No te olvides de colocar los datos que agregaste en el Módelo
     protected $fillable = [
         'name',
+        'address',
+        'phone',
         'email',
         'password',
     ];
