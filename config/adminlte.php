@@ -63,8 +63,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Limpio Be</b>',
+    'logo_img' => 'vendor/adminlte/dist/img/logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -311,20 +311,31 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
+        //TODO: Acá podemos cambiar las carpetas del dashboard del AmdinLTE
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text'        => 'Inicio',
+            'route'         => 'admin.index',
+            'icon'        => 'fas fa-home',
+            /* 'label'       => 4,
+            'label_color' => 'success', */
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'PANEL'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
+            'text' => 'Usuarios',
+            'url'  => '',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
+            'text' => 'Producto',
+            'url'  => '',
+            'icon' => 'fab fa-product-hunt',
+        ],
+        [
+            'text' => 'Editar Perfil',
+            'url'  => '',
+            'icon' => 'fas fa-cogs',
+        ],
+        /* [
             'text' => 'change_password',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
@@ -382,7 +393,7 @@ return [
             'text'       => 'information',
             'icon_color' => 'cyan',
             'url'        => '#',
-        ],
+        ], */
     ],
 
     /*
