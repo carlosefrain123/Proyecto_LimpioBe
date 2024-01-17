@@ -11,3 +11,8 @@ blade
 HACER LAS MIGRACIONES CORRESPONDIENTES
 -Modificar la migración en colocar nuevas tablas
 php artisan migrat:fresh
+****
+CREAR UN SEEDER
+php artisan make:seeder UserSeeder
+//Después de colocar los datos en UserSeeder
+php artisan migrate:fresh --seed
