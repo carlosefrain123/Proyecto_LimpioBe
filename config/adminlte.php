@@ -330,9 +330,10 @@ return [
             'url'  => '',
             'icon' => 'fab fa-product-hunt',
         ],
+        //TODO: Ruta de Editar perfil
         [
             'text' => 'Editar Perfil',
-            'url'  => '',
+            'route'  => 'profile.edit',
             'icon' => 'fas fa-cogs',
         ],
         /* [
