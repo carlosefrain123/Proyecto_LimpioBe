@@ -13,10 +13,14 @@ class ProfileUpdateRequest extends FormRequest
      *
      * @return array<string, \Illuminate\Contracts\Validation\Rule|array|string>
      */
+    //TODO: Básicamente viene hacer lo mismo de app/Http/Controllers/Auth/RegisteredUserController.php
+
     public function rules(): array
     {
         return [
             'name' => ['required', 'string', 'max:255'],
+            'address' => ['required', 'string', 'max:255'],
+            'phone' => ['numeric', 'digits:9'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', Rule::unique(User::class)->ignore($this->user()->id)],
         ];
     }
