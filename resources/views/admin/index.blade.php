@@ -18,7 +18,7 @@
 
 @section('content')
     <div class="text-center">
-        <img src="{{Auth::user()->photo ? asset('storage/'.Auth::user()->photo):asset('img/sfpr.jpg')}}" width="250"  height="250" class="rounded-circle">
+        <img src="{{Auth::user()->photo?asset('storage/'.Auth::user()->photo):asset('img/sfpr.jpg')}}" width="250"  height="250" class="rounded-circle">
     </div>
     <br>
     <h5 class="text-center">¡Hola! <b>{{Auth::user()->name}}</b> desde aquí podras administrar</h5>
